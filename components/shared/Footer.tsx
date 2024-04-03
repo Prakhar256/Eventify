@@ -1,7 +1,24 @@
-import React from 'react'
+import Image from "next/image"
+import Link from "next/link"
 
-export default function () {
+const Footer = () => {
   return (
-    <div></div>
+    <footer className="border-t">
+      <div className="flex-center wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row">
+        <Link href='/'>
+          <Image 
+            src="/assets/images/logo.svg"
+            alt="logo"
+            width={128}
+            height={38}
+          />
+        </Link>
+
+        <p >2024 Eventify. All Rights reserved.</p>
+        <p className="font-bold">Prakhar Jain</p>
+      </div>
+    </footer>
   )
 }
+
+export default Footer
